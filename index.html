@@ -146,3 +146,376 @@
       </div>
     </div>
   </section>
+    <section class="section" id="screens">
+
+    <h2>Automatic Fault Override</h2>
+
+    <p>
+      Whenever a critical condition is detected, the rotating HMI immediately
+      stops and displays the highest-priority warning screen. This ensures that
+      operators always see the most important fault first.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Weak Cell</h3>
+        <p>
+          LCD immediately displays the affected battery cell and relay status.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Over Voltage</h3>
+        <p>
+          High-voltage conditions override every normal information screen.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Sensor Fault</h3>
+        <p>
+          Sensor failures are highlighted instantly to prevent invalid readings.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Imbalance Warning</h3>
+        <p>
+          Excessive imbalance automatically triggers diagnostic mode.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Relay Status</h3>
+        <p>
+          Relay ON/OFF state is continuously monitored and displayed.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Automatic Recovery</h3>
+        <p>
+          After faults clear, the interface automatically resumes normal
+          rotating diagnostics.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="section dark">
+
+    <h2>Battery Analytics</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Pack Voltage</h3>
+        <p>
+          Total voltage of all battery cells combined.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Average Voltage</h3>
+        <p>
+          Average voltage calculated across the battery pack.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Battery SOC</h3>
+        <p>
+          Estimated State of Charge calculated from measured voltages.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cell Imbalance</h3>
+        <p>
+          Difference between strongest and weakest battery cell.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Strongest Cell</h3>
+        <p>
+          Automatically identifies the healthiest battery cell.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Weakest Cell</h3>
+        <p>
+          Detects the weakest battery cell for diagnostics.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="section">
+
+    <h2>Sample LCD Screens</h2>
+
+<pre>
+C1:1.62V C2:1.58V
+C3:1.55V C4:1.60V
+</pre>
+
+<pre>
+PACK:6.35V
+AVG:1.59V
+</pre>
+
+<pre>
+SOC:78%
+IMB:3.1%
+</pre>
+
+<pre>
+STATE: SAFE
+Relay: ON
+</pre>
+
+<pre>
+STR:C2 WK:C3
+FLT:0
+</pre>
+
+<pre>
+HEALTH:
+EXCELLENT
+</pre>
+
+  </section>
+
+
+
+  <section class="section dark" id="simulation">
+
+    <h2>Live Wokwi Simulation</h2>
+
+    <p>
+      Test the complete Intelligent Embedded HMI directly inside Wokwi.
+      Rotate the potentiometers to simulate battery cells and observe
+      automatic LCD updates, analytics, and fault diagnostics.
+    </p>
+
+    <a class="main-btn"
+       href="https://wokwi.com/projects/468410738609129473"
+       target="_blank">
+
+      ▶ Open Wokwi Simulation
+
+    </a>
+
+  </section>
+
+
+
+  <section class="section">
+
+    <h2>Software Modules</h2>
+
+<pre>
+Intelligent-Embedded-HMI-Diagnostic-Interface/
+
+├── sketch.ino
+├── diagram.json
+├── libraries.txt
+├── README.md
+├── index.html
+├── style.css
+└── script.js
+</pre>
+
+  </section>
+
+
+
+  <section class="section dark">
+
+    <h2>Technologies Used</h2>
+
+    <div class="grid">
+
+      <div class="card">ESP32</div>
+
+      <div class="card">Arduino C++</div>
+
+      <div class="card">I2C LCD</div>
+
+      <div class="card">Embedded Systems</div>
+
+      <div class="card">Battery Management</div>
+
+      <div class="card">Human Machine Interface</div>
+
+      <div class="card">Diagnostic Interface</div>
+
+      <div class="card">GitHub</div>
+
+      <div class="card">GitHub Pages</div>
+
+      <div class="card">Wokwi Simulator</div>
+
+    </div>
+
+  </section>
+    <section class="section">
+
+    <h2>Project Highlights</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Professional Embedded HMI</h3>
+        <p>
+          Designed using modern embedded HMI principles for real-time battery monitoring.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Automatic Screen Rotation</h3>
+        <p>
+          Smooth rotation between multiple LCD diagnostic screens without blocking execution.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Fault Priority Display</h3>
+        <p>
+          Critical battery faults automatically override normal screens for maximum visibility.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Battery Analytics</h3>
+        <p>
+          Displays SOC, pack voltage, average voltage, strongest/weakest cell and imbalance.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Optimized LCD Refresh</h3>
+        <p>
+          Updates only changed content, minimizing flicker and improving responsiveness.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Automotive Inspired</h3>
+        <p>
+          Built using concepts commonly used in professional Battery Management Systems.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="section dark">
+
+    <h2>Project Links</h2>
+
+    <div class="buttons">
+
+      <a href="https://wokwi.com/projects/468410738609129473"
+         target="_blank">
+
+         🔬 Wokwi Simulation
+
+      </a>
+
+      <a href="https://github.com/bikash-cloud/Intelligent-Embedded-HMI-Diagnostic-Interface"
+         target="_blank">
+
+         💻 GitHub Repository
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="connect">
+
+    <h2>Connect With Me</h2>
+
+    <div class="connect-links">
+
+      <a href="https://www.linkedin.com/in/bikash-swain-b75961322"
+         target="_blank">
+
+         💼 LinkedIn
+
+      </a>
+
+      <a href="https://github.com/bikash-cloud"
+         target="_blank">
+
+         💻 GitHub
+
+      </a>
+
+      <a href="mailto:swainbikash524@gmail.com">
+
+         📧 Email
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <footer>
+
+    <h2>Intelligent Embedded HMI & Diagnostic Interface</h2>
+
+    <p>
+
+      Designed & Developed by
+
+      <strong>BIKASH SWAIN</strong>
+
+    </p>
+
+    <p>
+
+      B.Tech — Electronics & Communication Engineering
+
+    </p>
+
+    <p>
+
+      Embedded Systems • ESP32 • STM32 • Battery Management • IoT
+
+    </p>
+
+    <p style="margin-top:20px;">
+
+      © 2026 BIKASH SWAIN. All Rights Reserved.
+
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
