@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Intelligent Embedded HMI & Diagnostic Interface</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <h2>📟 Intelligent Embedded HMI</h2>
+
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="#simulation">Simulation</a>
+        <a href="https://github.com/bikash-cloud/Intelligent-Embedded-HMI-Diagnostic-Interface" target="_blank">GitHub</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <span class="tag">ESP32 • LCD HMI • Battery Diagnostics</span>
+
+      <h1>Intelligent Embedded HMI & Diagnostic Interface</h1>
+
+      <p>
+        A professional ESP32-based Human-Machine Interface designed to display
+        live battery data, analytics, protection status, and fault diagnostics
+        on a 16x2 I2C LCD using smooth, flicker-free rendering.
+      </p>
+
+      <div class="buttons">
+        <a href="https://wokwi.com/projects/468410738609129473" target="_blank">
+          Open Wokwi Simulation
+        </a>
+
+        <a href="https://github.com/bikash-cloud/Intelligent-Embedded-HMI-Diagnostic-Interface" target="_blank">
+          View Source Code
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="overview">
+    <h2>Project Overview</h2>
+
+    <p>
+      This project implements an intelligent embedded HMI for a simulated
+      four-cell battery system. The interface automatically rotates between
+      multiple diagnostic screens showing real-time voltage readings, pack
+      analytics, protection status, fault diagnostics, state of charge, health
+      status, relay status, and active faults.
+    </p>
+
+    <p>
+      The system is designed with optimized LCD refresh logic to avoid flicker.
+      During critical conditions, the normal rotating dashboard is immediately
+      overridden by a fault-priority screen so that the most important warning
+      is shown first.
+    </p>
+  </section>
+
+  <section class="section dark" id="features">
+    <h2>Key Features</h2>
+
+    <div class="grid">
+      <div class="card">Professional LCD HMI</div>
+      <div class="card">Auto-Rotating Screens</div>
+      <div class="card">Live Cell Voltage Display</div>
+      <div class="card">Battery Analytics</div>
+      <div class="card">Pack Voltage Calculation</div>
+      <div class="card">Average Voltage Display</div>
+      <div class="card">SOC Estimation</div>
+      <div class="card">Imbalance Monitoring</div>
+      <div class="card">Strongest Cell Detection</div>
+      <div class="card">Weakest Cell Detection</div>
+      <div class="card">Protection Status Screen</div>
+      <div class="card">Fault Diagnostics Screen</div>
+      <div class="card">Fault-Priority Override</div>
+      <div class="card">Flicker-Free LCD Rendering</div>
+      <div class="card">Optimized Refresh Handling</div>
+      <div class="card">Relay & Buzzer Integration</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>System Architecture</h2>
+
+    <div class="architecture">
+      <div>4 Battery Cells<br><small>Potentiometers</small></div>
+      <div>ESP32 ADC<br><small>Voltage Inputs</small></div>
+      <div>Analytics Engine<br><small>Pack Data</small></div>
+      <div>Fault Engine<br><small>Diagnostics</small></div>
+      <div>HMI Manager<br><small>Screen Rotation</small></div>
+      <div>LCD Display<br><small>16x2 I2C</small></div>
+      <div>Relay Output<br><small>Protection</small></div>
+      <div>Buzzer Alert<br><small>Warning</small></div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <h2>HMI Screen Rotation</h2>
+
+    <p>
+      The HMI automatically rotates between multiple diagnostic screens during
+      normal operation. Each screen provides a specific category of information
+      to make the system easier to monitor and debug.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Screen 1</h3>
+        <p>Live cell voltages for Cell 1, Cell 2, Cell 3, and Cell 4.</p>
+      </div>
+
+      <div class="card">
+        <h3>Screen 2</h3>
+        <p>Pack voltage and average battery cell voltage.</p>
+      </div>
+
+      <div class="card">
+        <h3>Screen 3</h3>
+        <p>State of charge and imbalance percentage.</p>
+      </div>
+
+      <div class="card">
+        <h3>Screen 4</h3>
+        <p>System state and relay protection status.</p>
+      </div>
+
+      <div class="card">
+        <h3>Screen 5</h3>
+        <p>Strongest cell, weakest cell, and active fault count.</p>
+      </div>
+
+      <div class="card">
+        <h3>Screen 6</h3>
+        <p>Battery health status such as Excellent, Good, Warning, or Critical.</p>
+      </div>
+    </div>
+  </section>
